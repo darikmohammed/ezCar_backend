@@ -88,6 +88,4 @@ test:
 #
 production:
   <<: *default
-  database: ezCar_backend_production
-  username: ezCar_backend
-  password: <%= ENV["EZCAR_BACKEND_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
